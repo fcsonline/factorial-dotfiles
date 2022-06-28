@@ -12,6 +12,9 @@ popd
 
 source ~/.bashrc
 
+# Install tmux plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # Install packer dependencies
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' # Yep, twice
