@@ -23,7 +23,7 @@ alias gl='git log'
 alias grm='git rebase master'
 alias gm='git commit -m'
 alias gma='git commit --amend --no-edit'
-alias gp='git publish'
+# alias gp='git publish'
 alias gpr='git pull --rebase'
 alias gs='git status -s'
 
