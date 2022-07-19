@@ -153,6 +153,7 @@ return require("packer").startup(function(use)
 
 	-- Explorer
 	use("preservim/nerdtree")
+	use("ryanoasis/vim-devicons")
 
 	-- Color
 	use({
