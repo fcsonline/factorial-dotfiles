@@ -51,8 +51,8 @@ local opts = {
 keymap('n', 'K', vim.lsp.buf.hover)
 
 local mappings = {
-    n = { ":NvimTreeToggle<CR>", "NerdTree" },
-    f = { ":NvimTreeFindFile<CR>", "Find File" },
+    n = { ":NvimTreeToggle<CR>", "Open file explorer" },
+    f = { ":NvimTreeFindFile<CR>", "Find file in file explorer" },
     h = { ":let @/=''<CR>", "No Highlight" },
     r = { "<cmd>FzfLua resume<cr>", "Resume search" },
 
