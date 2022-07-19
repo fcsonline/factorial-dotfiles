@@ -17,6 +17,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 TMUX_PLUGIN_MANAGER_PATH="${HOME}/.tmux/plugins/" ~/.tmux/plugins/tpm/bin/install_plugins
 
 # Install packer dependencies
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' -u ~/.config/nvim/lua/plugins.lua
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' # Yep, twice
 
 # TODO: Add the same for treesitter
