@@ -152,15 +152,7 @@ return require("packer").startup(function(use)
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 
 	-- Explorer
-	use({
-		"kyazdani42/nvim-tree.lua",
-		requires = {
-			"kyazdani42/nvim-web-devicons", -- optional, for file icon
-		},
-		config = function()
-			require("plugins/nvim-tree")
-		end,
-	})
+	use("preservim/nerdtree")
 
 	-- Color
 	use({

@@ -46,17 +46,22 @@ local opts = {
 	nowait = false, -- use `nowait` when creating keymaps
 }
 
--- NvimTree
-vim.keymap.set("n", "<Leader>n", ":NvimTreeToggle<CR>", { silent = true })
-vim.keymap.set("n", "<Leader>f", ":NvimTreeFindFile<CR>", { silent = true })
+-- NERDTree configuration
+vim.keymap.set("n", "<Leader>n", "<cmd>NERDTreeToggle<cr>", { silent = true })
+vim.keymap.set("n", "<Leader>m", "<cmd>NERDTreeFind<cr>", { silent = true })
 
 -- No Highlights
 vim.keymap.set("n", "<Leader>h", ":let @/=''<CR>", { silent = true })
 
+-- Fast fuzzy find
+vim.keymap.set("n", "<Leader><Leader>", "<cmd>FzfLua git_files<cr>", { silent = true })
+
 local mappings = {
 	n = "NerdTree",
-	f = "Find File",
+	m = "Find File",
 	h = "No Highlight",
+
+	["<space>"] = "Fuzzy search",
 
 	g = {
 		name = "Git",
