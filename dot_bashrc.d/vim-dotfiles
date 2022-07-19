@@ -12,3 +12,11 @@ export GIT_EDITOR=nvim
 
 # Set the vi mode for bash
 set -o vi
+
+# NOTE: Installing Starship here because the installation process call to sudo
+# commands and these forbidden in the Gitpod boot process.
+if ! [ -x "$(command -v starship)" ]; then
+  curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir ${HOME}/bin >/dev/null 2>&1
+fi
+
+eval "$(starship init bash)"

@@ -1,0 +1,10 @@
+command_timeout = 800
+
+[container]
+disabled = true
+
+[aws]
+disabled = true
+
+[hostname]
+disabled = true
