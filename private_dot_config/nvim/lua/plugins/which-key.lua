@@ -57,8 +57,8 @@ vim.keymap.set("n", "<Leader>h", ":let @/=''<CR>", { silent = true })
 vim.keymap.set("n", "<Leader><Leader>", "<cmd>FzfLua git_files<cr>", { silent = true })
 
 local mappings = {
-	n = "NerdTree",
-	m = "Find File",
+	n = "Open file explorer",
+	m = "Find file in file explorer",
 	h = "No Highlight",
 
 	["<space>"] = "Fuzzy search",
