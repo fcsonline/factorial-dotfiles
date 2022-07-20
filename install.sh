@@ -19,5 +19,4 @@ TMUX_PLUGIN_MANAGER_PATH="${HOME}/.tmux/plugins/" ~/.tmux/plugins/tpm/bin/instal
 # Install packer dependencies
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' # Yep, twice
-
-# TODO: Add the same for treesitter
+nvim --headless -c 'TSUpdateSync'
