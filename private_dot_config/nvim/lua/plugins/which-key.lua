@@ -55,6 +55,8 @@ local mappings = {
     f = { ":NvimTreeFindFile<CR>", "Find file in file explorer" },
     h = { ":let @/=''<CR>", "No Highlight" },
     r = { "<cmd>FzfLua resume<cr>", "Resume search" },
+    b = { "<cmd>FzfLua buffers<cr>", "Buffers" },
+    a = { "<cmd>FzfLua grep<cr>", "Grep" },
 
     ["<space>"] = { "<cmd>FzfLua git_files<cr>", "Fuzzy search" },
 
