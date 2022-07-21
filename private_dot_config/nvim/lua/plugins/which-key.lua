@@ -55,11 +55,18 @@ vim.keymap.set("n", "<Leader>h", ":let @/=''<CR>", { silent = true })
 
 -- Fast fuzzy find
 vim.keymap.set("n", "<Leader><Leader>", "<cmd>FzfLua git_files<cr>", { silent = true })
+vim.keymap.set("n", "<Leader>b", "<cmd>FzfLua buffers<cr>", { silent = true })
+vim.keymap.set("n", "<Leader>a", "<cmd>FzfLua grep<cr>", { silent = true })
+vim.keymap.set("n", "<Leader>r", "<cmd>FzfLua resume<cr>", { silent = true })
 
 local mappings = {
 	n = "Open file explorer",
 	m = "Find file in file explorer",
 	h = "No Highlight",
+
+	a = "Grep",
+	b = "Buffers",
+	r = "Resume",
 
 	["<space>"] = "Fuzzy search",
 
