@@ -59,6 +59,9 @@ vim.keymap.set("n", "<Leader>b", "<cmd>FzfLua buffers<cr>", { silent = true })
 vim.keymap.set("n", "<Leader>a", "<cmd>FzfLua grep<cr>", { silent = true })
 vim.keymap.set("n", "<Leader>r", "<cmd>FzfLua resume<cr>", { silent = true })
 
+-- Focus mode
+vim.keymap.set("n", "<Leader>o", "<cmd>:only<cr>", { silent = true })
+
 local mappings = {
 	n = "Open file explorer",
 	m = "Find file in file explorer",
@@ -67,6 +70,8 @@ local mappings = {
 	a = "Grep",
 	b = "Buffers",
 	r = "Resume",
+
+	o = "Focus on current file",
 
 	["<space>"] = "Fuzzy search",
 
