@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Testing
+exit 0
+
 ~/bin/chezmoi init
 
 pushd ~/.local/share/chezmoi
