@@ -10,10 +10,6 @@ popd
 
 ~/bin/chezmoi apply
 
-# Install tmux plugins
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-TMUX_PLUGIN_MANAGER_PATH="${HOME}/.tmux/plugins/" ~/.tmux/plugins/tpm/bin/install_plugins & disown
-
-# Install packer dependencies
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' & disown
-nvim --headless -c 'TSUpdateSync' & disown
+# Install the rest of scripts asyncronously
+./gitpod/tmux.sh & disown
+./gitpod/nvim.sh & disown
