@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Execute this script manually
+[ -z "$PS1" ] && exit
+
 ~/bin/chezmoi init
 
 pushd ~/.local/share/chezmoi
@@ -11,5 +14,5 @@ popd
 ~/bin/chezmoi apply
 
 # Install the rest of scripts asyncronously
-./gitpod/tmux.sh & disown
-./gitpod/nvim.sh & disown
+$(dirname $0)/gitpod/tmux.sh & disown
+$(dirname $0)/gitpod/nvim.sh & disown
