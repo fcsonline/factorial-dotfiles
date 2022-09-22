@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Execute this script manually
-if [ -z "$PS1" ]; then
+if [ -z "${INIT}" ]; then
   echo "Initializing dotfiles..."
 else
-  echo "This script is not designed to run from $SHELL"
+  echo "This script is not designed to run from $SHELL and with INIT env variable"
   exit 1
 fi
 
