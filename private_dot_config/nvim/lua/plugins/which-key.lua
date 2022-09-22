@@ -56,7 +56,7 @@ local mappings = {
     h = { ":let @/=''<CR>", "No Highlight" },
     r = { "<cmd>FzfLua resume<cr>", "Resume search" },
 
-    ["<space>"] = { "<cmd>FzfLua files<cr>", "Fuzzy search" },
+    ["<space>"] = { "<cmd>FzfLua git_files<cr>", "Fuzzy search" },
 
     g = {
         name = "Git",
