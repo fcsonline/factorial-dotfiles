@@ -57,6 +57,7 @@ local mappings = {
     r = { "<cmd>FzfLua resume<cr>", "Resume search" },
     b = { "<cmd>FzfLua buffers<cr>", "Buffers" },
     a = { "<cmd>FzfLua grep<cr>", "Grep" },
+    o = { "<cmd>:only<cr>", "Focus on current file" },
 
     ["<space>"] = { "<cmd>FzfLua git_files<cr>", "Fuzzy search" },
 
