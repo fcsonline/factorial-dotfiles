@@ -71,6 +71,7 @@ local mappings = {
         r = { "<cmd>FzfLua lsp_references<CR>", "References" },
         t = { "<cmd>FzfLua lsp_typedefs<CR>", "Type defs" },
         R = { vim.lsp.buf.rename, "Rename" },
+	f = { "<cmd>:lua vim.lsp.buf.code_action()<cr>", "Fix" },
         i = { "<cmd>LspInfo<cr>", "Info" },
         m = { "<cmd>Mason<cr>", "Mason" },
     },
