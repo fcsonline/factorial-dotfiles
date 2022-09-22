@@ -2,10 +2,10 @@
 
 # Execute this script manually
 if [ -z "${INIT}" ]; then
-  echo "Initializing dotfiles..."
-else
   echo "This script is not designed to run from $SHELL and with INIT env variable"
   exit 1
+else
+  echo "Initializing dotfiles..."
 fi
 
 ~/bin/chezmoi init
