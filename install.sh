@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # Execute this script manually
-[ -z "$PS1" ] && exit
+if [ -z "$PS1" ]; then
+  echo "Initializing dotfiles..."
+else
+  echo "This script is not designed to run from $SHELL"
+  exit 1
+fi
 
 ~/bin/chezmoi init
 
