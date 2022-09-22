@@ -161,6 +161,7 @@ return require("packer").startup(function(use)
 		as = "catppuccin",
 		config = function()
 			require("plugins/catppuccin")
+			vim.cmd([[colorscheme catppuccin]])
 		end,
 	})
 
