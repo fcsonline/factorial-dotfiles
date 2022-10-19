@@ -56,7 +56,7 @@ local mappings = {
     h = { ":let @/=''<CR>", "No Highlight" },
     r = { "<cmd>FzfLua resume<cr>", "Resume search" },
     b = { "<cmd>FzfLua buffers<cr>", "Buffers" },
-    a = { "<cmd>FzfLua grep<cr>", "Grep" },
+    a = { ":lua require'fzf-lua'.grep({ cmd = \"git grep --line-number --column --color=always\" })<cr>", "Grep" },
     o = { "<cmd>:only<cr>", "Focus on current file" },
 
     ["<space>"] = { "<cmd>FzfLua git_files<cr>", "Fuzzy search" },
