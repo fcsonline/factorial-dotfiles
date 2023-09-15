@@ -1,8 +1,6 @@
 [user]
 	name = Ferran Basora
 	email = fcsonline@gmail.com
-[credential]
-	helper = /usr/bin/gp credential-helper
 [core]
 	editor = nvim
 [color]
