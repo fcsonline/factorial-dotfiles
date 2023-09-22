@@ -3,15 +3,6 @@ vim.cmd("highlight NvimTreeGitNew gui=NONE guifg=" .. colors.green .. " guibg=NO
 
 require("nvim-tree").setup({
     open_on_setup = false,
-    view = {
-        mappings = {
-            list = {
-                { key = "s", action = "vsplit" },
-                { key = "i", action = "split" },
-                { key = "p", action = "parent_node" },
-            },
-        },
-    },
     renderer = {
         indent_markers = {
             enable = true,
